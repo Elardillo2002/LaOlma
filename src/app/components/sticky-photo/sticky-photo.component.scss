@@ -1,0 +1,58 @@
+div {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 565px;
+    background-image: url("../../../assets/images/FOTO6.jpg");
+}
+
+div div {
+    position: relative;
+    left: 50%;
+    top: 300px;
+
+    min-height: 300px;
+    transform: translate(-50%, -50%);
+    width: 65%;
+
+    
+    background: #e6b58b82;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-family: "Whisper", cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    padding: 10vh 0 0 2vh;
+}
+
+a {
+    background-color: #9a5833;
+    border: 0.5px solid #9a5833;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    border: 1px solid white;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2em;
+        padding: 15vh 0 0 2vh;
+    }
+}
+
+@media (max-width: 517px) {
+    h1 {
+        padding: 10vh 0 0 2vh;
+    }
+}
