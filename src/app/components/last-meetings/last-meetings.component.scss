@@ -1,0 +1,51 @@
+@import 'src/styles.scss';
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+    justify-items: center;
+}
+
+article {
+    display: grid;
+    grid-template-rows: 300px 0.75fr;
+    align-items: center;
+    justify-items: center;
+
+    background-color: $primary-color2100;
+    border: 3px solid $primary-color4050;
+    padding: 10px;
+    width: 20vw;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+img {
+    border: 2px solid $primary-color4050;
+
+    margin-top: 10px;
+    width: 19.5vw;
+}
+
+p:nth-child(1) {
+    text-align: right;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+
+    background-color: $primary-color3100;
+    grid-column: 1 / -1;
+    margin: 20px 0;
+    padding: 7px;
+}
+
+a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,32 @@
+@import 'src/styles.scss';
+
+div {
+    position: relative;
+    display: inline-block;
+}
+
+div img {
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+}
+
+div p {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 20px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background: $primary-color5050;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+div:hover p {
+    opacity: 0;
+}

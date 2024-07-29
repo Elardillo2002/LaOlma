@@ -40,3 +40,46 @@ Instalación: https://github.com/coreybutler/nvm-windows/releases
 
 ## Generar un nuevo componente
 > ng generate component components/_nombre-componente_git
+
+
+/eventopasado
++ id (autogenerado)
++ fecha (año-mes-dia)
++ descripcion (string)
++ imagen (array de bytes)
++ Enlace (string)
+
+/eventofuturo
++ id
++ fecha
++ descripcion
++ tipo
+
+eventos
+get
+/api/eventospasados /id
+/api/eventosfuturos
+/los últimos
+
+post
+todos menos el id
+
+borrar
+/id
+
+put
+/id 
+evento a actualizar
+
+futuros
+/proximos
+
+post
+todo menos el id
+en body
+
+delete 
+/id
+
+put
+/id + body

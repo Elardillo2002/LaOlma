@@ -1,21 +1,19 @@
 <header>
-    <img src="../../../assets/images/La Olma.png" alt="Logotipo de la asociación">
+    <img src="/assets/images/La olma.webp" alt="Logotipo de la asociación">
     <ul class="sidebar" *ngIf="sidebar">
-        <li (click)="changeSidebar()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </li>
+        <li><mat-icon (click)="changeSidebar()" > close </mat-icon></li>
         <li><a routerLink="/home"><span> {{ "capital.home" | translate }} </span></a></li>
-        <li><a routerLink="/cafeteria"><span> {{ "capital.cafeteria" | translate }} </span></a></li>
-        <li><a routerLink="/menu"><span> {{ "capital.menu" | translate }} </span></a></li>
+        <li><a routerLink="/la_Olma"><span> LA OLMA </span></a></li>
+        <li><a routerLink="/activities"><span> {{ "capital.activities" | translate }} </span></a></li>
+        <li><a routerLink="/collaborate"><span> {{ "capital.collaborate" | translate }} </span></a></li>
         <li><a routerLink="/contact"><span> {{ "capital.contact" | translate }} </span></a></li>
     </ul>
     <ul *ngIf="!sidebar">
         <li class="hideOnMobile"><a routerLink="/home"><span> {{ "capital.home" | translate }} </span></a></li>
-        <li class="hideOnMobile"><a routerLink="/cafeteria"><span> {{ "capital.cafeteria" | translate }} </span></a></li>
-        <li class="hideOnMobile"><a routerLink="/menu"><span> {{ "capital.menu" | translate }} </span></a></li>
-        <li class="hideOnMobile"><a routerLink="/contact"><span> {{ "capital.contact" | translate }} </span></a></li>
-        <li (click)="changeSidebar()" id="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </li>
+        <li class="hideOnMobile"><a routerLink="/la_Olma"><span> LA OLMA </span></a></li>
+        <li class="hideOnMobile"><a routerLink="/activities"><span> {{ "capital.activities" | translate }} </span></a></li>
+        <li class="hideOnMobile"><a routerLink="/collaborate"><span> {{ "capital.collaborate" | translate }} </span></a></li>
+        <li><a routerLink="/contact"><span> {{ "capital.contact" | translate }} </span></a></li>
+        <mat-icon (click)="changeSidebar()"> menu </mat-icon>
     </ul>
 </header>

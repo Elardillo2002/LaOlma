@@ -1,4 +1,13 @@
 {
+    "capital": {
+        "home": "INICIO",
+        "activities": "ACTIVIDADES",
+        "contact": "CONTACTO",
+        "collaborate": "COLABORA",
+        "RRSS": "REDES SOCIALES",
+        "aboutUs": "SOBRE NOSOTROS"
+    },
+
     "pageNavigation": {
         "404": "Error 404. Página no encontrada",
         "returnHome": "Volver a inicio"

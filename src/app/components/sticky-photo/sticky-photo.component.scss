@@ -1,10 +1,12 @@
+@import 'src/styles.scss';
+
 div {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 565px;
-    background-image: url("../../../assets/images/FOTO6.jpg");
+    background-image: url("/assets/images/421957054_10220278329102968_8473322325660952358_n.webp");
 }
 
 div div {
@@ -17,23 +19,21 @@ div div {
     width: 65%;
 
     
-    background: #e6b58b82;
+    background: $secondary-color4050;
     color: white;
     font-size: 20px;
     text-align: center;
 }
 
 h1 {
-    color: black;
-    font-family: "Whisper", cursive;
-    font-size: 3em;
+    color: white;
     letter-spacing: 2px;
     padding: 10vh 0 0 2vh;
 }
 
 a {
-    background-color: #9a5833;
-    border: 0.5px solid #9a5833;
+    background-color: $primary-color2100;
+    border: 0.5px solid $primary-color2100;
     border-radius: 10px;
     color: white;
     padding: 15px;

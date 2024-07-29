@@ -1,4 +1,11 @@
-{
+{    
+    "capital": {
+    "home": "HOME",
+    "activities": "ACTIVITIES",
+    "contact": "CONTACT",
+    "collaborate": "COLLABORATE"
+},
+
     "pageNavigation": {
         "404": "404 Page not found",
         "returnHome": "Return home"

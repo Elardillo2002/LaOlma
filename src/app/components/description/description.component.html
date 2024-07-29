@@ -1,1 +1,29 @@
-<p>description works!</p>
+<section>
+    <button>
+        <mat-icon (click)="onPrevClick()">keyboard_arrow_left</mat-icon>
+    </button>
+    
+    <article>
+        <img *ngFor="let article of articles; let i = index"
+            [src]="article.imageSrc" [alt]="article.imageAlt"
+            [ngClass]="{'image-active': selectedIndex === i}">
+
+        <div class="dot">
+            <span *ngFor="let dot of articles; let i = index"
+                (click)="selectArticle(i)" 
+                [ngClass]="{'active': selectedIndex === i}"></span>
+        </div>
+    </article>
+
+    <article>
+        <div *ngFor="let article of articles; let i = index">
+            <h1 [ngClass]="{'text-active': selectedIndex === i}"> {{ article.title }} </h1>
+            <p [ngClass]="{'text-active': selectedIndex === i}"> {{article.text}} </p>
+            <a [routerLink]="article.link" [ngClass]="{'text-active': selectedIndex === i}"> {{ article.linkWord }} </a>
+        </div>
+    </article>
+
+    <button>
+        <mat-icon (click)="onNextClick()">keyboard_arrow_right</mat-icon>
+    </button>
+</section>

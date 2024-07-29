@@ -1,4 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color1100: #AEE677;
+$primary-color1075: #ade675bf;
+$primary-color1050: #aee67780;
+$primary-color2100: #A8DD73;
+$primary-color2075: #A8DD73bf;
+$primary-color2050: #A8DD7380;
+$primary-color3100: #87BB61;
+$primary-color3075: #87BB61bf;
+$primary-color3050: #87BB6180;
+$primary-color4100: #749950;
+$primary-color4075: #749950bf;
+$primary-color4050: #74995080;
+$primary-color5100: #5A773E;
+$primary-color5075: #5A773Ebf;
+$primary-color5050: #5A773E80;
+$primary-color6100: #41552C;
+$primary-color6075: #41552Cbf;
+$primary-color6050: #41552C80;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$secondary-color1100: #E6DB77;
+$secondary-color1075: #E6DB77bf;
+$secondary-color1050: #E6DB7780;
+$secondary-color2100: #DDE677;
+$secondary-color2075: #DDE677bf;
+$secondary-color2050: #DDE67780;
+$secondary-color3100: #D5E6C4;
+$secondary-color3075: #D5E6C4bf;
+$secondary-color3050: #D5E6C480;
+$secondary-color4100: #aee677;
+$secondary-color4075: #aee677bf;
+$secondary-color4050: #aee67780;
+$secondary-color5100: #80E677;
+$secondary-color5075: #80E677bf;
+$secondary-color5050: #80E67780;
+$secondary-color6100: #77E695;
+$secondary-color6075: #77E695bf;
+$secondary-color6050: #77E69580;
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+main {
+    margin: 10px;
+}

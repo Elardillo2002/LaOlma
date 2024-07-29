@@ -1,0 +1,66 @@
+@import 'src/styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+    justify-items: center;
+
+    margin-top: 10px;
+}
+
+article {
+    height: 250px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 70px;
+    margin: 0;
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+
+h3 {
+    position: relative;
+    bottom: -40px;
+    font-family: "Roboto", sans-serif;
+}
+
+h2, h3 {
+    text-align: right;
+}
+
+span {
+    font-size: 30px;
+    font-family: "Playwrite DK Uloopet", cursive;
+}
+
+a {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: $primary-color3100;
+    opacity: 0.7;
+    grid-column: 1 / -1;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+img {
+    width: 90px;
+    margin: 0;
+    position: relative;
+    top: -170px;
+    left: 20px;
+}

@@ -1,0 +1,95 @@
+@import 'src/styles.scss';
+
+section {
+    display: grid;
+    grid-template-columns: 200px 1fr 0.5fr 200px;
+    column-gap: 20px;
+
+    background: $primary-color1100;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+article {
+    margin: auto;
+    position: relative;
+}
+
+a, h1, img, p {
+    display: none;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    
+    background: $primary-color3100;
+    padding: 8px 0;
+    width: auto;
+}
+
+/* Image */
+.image-active {
+    display: block;
+    height: 400px;
+    width: 700px;
+}
+
+.text-active {
+    display: block;
+}
+
+/* Dots */
+.dot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+span {
+    background-color: white;
+    border-radius: 50%;
+    height: 13px;
+    margin: 0 5px;
+    width: 13px;
+
+    cursor: pointer;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.active,
+span:hover {
+    opacity: 1;
+}
+
+/* Previous and next buttons */
+button {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: 0;
+    font-size: 45px;
+}
+    
+mat-icon {
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+mat-icon:hover {
+    opacity: 1;
+}
