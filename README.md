@@ -41,6 +41,22 @@ Instalación: https://github.com/coreybutler/nvm-windows/releases
 ## Generar un nuevo componente
 > ng generate component components/_nombre-componente_git
 
+# OPCIONES DE LA API
+## Eventos pasados
+- Listar todos los eventos -> /api/eventospasados                                   GET
+- Buscar evento por id -> /api/eventospasados/_id_                                  GET
+- Listar últimos eventos -> /api/eventospasados/ultimos                             GET
+- Añadir un evento nuevo -> /api/eventospasados + BODY                              POST
+- Borrar un evento -> /api/eventospasados/_id_                                      DELETE
+- Actualizar un evento -> /api/eventospasados/_id_ + BODY                           PUT
+
+## Eventos futuros
+- Listar todos los eventos -> /api/eventosfuturos                                   GET
+- Buscar evento por id -> /api/eventosfuturos/_id_                                  GET
+- Listar próximos eventos -> /api/eventosfuturos/proximos                           GET
+- Añadir un evento nuevo -> /api/eventosfuturos + BODY                              POST
+- Borrar un evento -> /api/eventosfuturos/_id_                                      DELETE
+- Actualizar un evento -> /api/eventosfuturos/_id_ + BODY                           PUT
 
 /eventopasado
 + id (autogenerado)
@@ -51,35 +67,6 @@ Instalación: https://github.com/coreybutler/nvm-windows/releases
 
 /eventofuturo
 + id
-+ fecha
-+ descripcion
++ fecha (año-mes-dia)
++ descripcion (string)
 + tipo
-
-eventos
-get
-/api/eventospasados /id
-/api/eventosfuturos
-/los últimos
-
-post
-todos menos el id
-
-borrar
-/id
-
-put
-/id 
-evento a actualizar
-
-futuros
-/proximos
-
-post
-todo menos el id
-en body
-
-delete 
-/id
-
-put
-/id + body

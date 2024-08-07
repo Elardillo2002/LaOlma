@@ -13,6 +13,7 @@ header {
 
 img {
     width: 100%;
+    cursor: pointer;
 }
 
 ul {
@@ -36,6 +37,7 @@ span {
     &:active {
         color: white;
         cursor: pointer;
+        transition: color 0.5s;
     }
 }
 

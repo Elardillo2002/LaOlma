@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    margin: 20px 40px;
+}
+
+section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section:nth-child(1) article:nth-child(1),
+h1 {
+    grid-column: 1 / -1;
+}
+
+section:nth-child(1) img {
+    width: 200px;
+}
+
+section:nth-child(2) img {
+    width: 300px;
+}
+
+section:nth-child(3) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(3) img {
+    width: 300px;
+}

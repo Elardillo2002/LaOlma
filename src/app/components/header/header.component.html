@@ -1,5 +1,5 @@
 <header>
-    <img src="/assets/images/La olma.webp" alt="Logotipo de la asociación">
+    <a routerLink="/home"><img src="/assets/images/La olma.webp" alt="Logotipo de la asociación"></a>
     <ul class="sidebar" *ngIf="sidebar">
         <li><mat-icon (click)="changeSidebar()" > close </mat-icon></li>
         <li><a routerLink="/home"><span> {{ "capital.home" | translate }} </span></a></li>
