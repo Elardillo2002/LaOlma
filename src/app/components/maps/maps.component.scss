@@ -1,0 +1,33 @@
+@import 'src/styles.scss';
+
+section:nth-child(1) {
+    background: url("/assets/images/Localizacion.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: $primary-color3100;
+    transition: color 0.5s;
+}
+
+div {
+    display: grid;
+    background-color: white;
+    position: relative;
+    top: 25%;
+    left: 65%;
+    width: 25vw;
+    padding: 10px 30px 30px;
+    row-gap: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+}

@@ -9,7 +9,8 @@
     },
 
     "pageNavigation": {
-        "404": "Error 404. Página no encontrada",
+        "404": "¡Oh no, parece que te has perdido en el bosque!",
+        "dontExists": "La página que estás buscando no existe o ha sido eliminada",
         "returnHome": "Volver a inicio"
     }
 }

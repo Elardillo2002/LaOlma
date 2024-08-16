@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface carouselImage {
     title: string;
@@ -16,15 +16,17 @@ interface carouselImage {
 
 export class DescriptionComponent {
     @Input() articles: carouselImage[] = [];
-
     selectedIndex = 0;
+
+    ngOnInit(): void {
+        setInterval(() => this.onNextClick(), 10000);
+    }
 
     selectArticle(index: number): void {
         this.selectedIndex = index;
     }
 
     onPrevClick(): void {
-        console.log("entre");
         if (this.selectedIndex === 0) {
             this.selectedIndex = this.articles.length - 1;
         } else {
@@ -33,7 +35,6 @@ export class DescriptionComponent {
     }
 
     onNextClick(): void {
-        console.log("entre2");
         if (this.selectedIndex === this.articles.length - 1) {
             this.selectedIndex = 0;
         } else {

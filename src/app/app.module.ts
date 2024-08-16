@@ -23,6 +23,7 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { CollaborateComponent } from './components/collaborate/collaborate.component';
 import { ImageCardComponent } from './components/image-card/image-card.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MapsComponent } from './components/maps/maps.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ActivitiesComponent,
     CollaborateComponent,
     ImageCardComponent,
-    ContactComponent
+    ContactComponent,
+    MapsComponent
   ],
   imports: [
     AppRoutingModule,

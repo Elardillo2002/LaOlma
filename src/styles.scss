@@ -36,15 +36,18 @@ $secondary-color6100: #77E695;
 $secondary-color6075: #77E695bf;
 $secondary-color6050: #77E69580;
 
-html, body { 
-    height: 100%; 
-}
-
 body { 
+    min-height: 100%; 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
-main {
-    margin: 10px;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+a, span, p, h1, h2, h3, input, label {
+    font-size: 1.5rem;
 }

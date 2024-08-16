@@ -1,6 +1,7 @@
 export interface pastEvent {
+    id?: number;
     fecha: string;
     descripcion: string;
-    imagen: ArrayBuffer;
-    enlace: string;
+    imagen: string;
+    date?: string;
 }

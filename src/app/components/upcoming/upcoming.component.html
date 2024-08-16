@@ -1,22 +1,12 @@
 <section>
     <h1> Próximos eventos </h1>
-    <article>
-        <h3> Sábado </h3>
-        <h2> 20 <span> de julio </span></h2>
-        <p> Realizaremos una plantación de árboles en la zona de Cigales </p>
-        <img src="/assets/images/plant.png" alt="Plantación">
-    </article>
-    <article>
-        <h3> Miércoles </h3>
-        <h2> 24 <span> de julio </span></h2>
-        <p> Tendrá lugar un paseo comentado con Jesus Anta Roca </p>
-        <img src="/assets/images/speak.png" alt="Charla">
-    </article>
-    <article>
-        <h3> Sábado </h3>
-        <h2> 27 <span> de julio </span></h2>
-        <p> Jornada de limpieza en las cercanías del Río Pisuerga </p>
-        <img src="/assets/images/trash.png" alt="Jornada de limpieza">
+    <article *ngFor="let event of upcomingEvents">
+        <img [src]="getImage(event.tipo)" alt="Plantación">
+        <div>
+            <h3> {{ event.date?.dayName }} </h3>
+            <h2> {{ event.date?.day }} <span> de {{ event.date?.monthName }} </span></h2>
+            <p> {{ event.descripcion }} </p>
+        </div>
     </article>
     <a routerLink="/contact"> Contacto </a>
 </section>

@@ -58,15 +58,14 @@ Instalación: https://github.com/coreybutler/nvm-windows/releases
 - Borrar un evento -> /api/eventosfuturos/_id_                                      DELETE
 - Actualizar un evento -> /api/eventosfuturos/_id_ + BODY                           PUT
 
-/eventopasado
+/eventopasado (FORM-DATA)
 + id (autogenerado)
 + fecha (año-mes-dia)
 + descripcion (string)
 + imagen (array de bytes)
-+ Enlace (string)
 
-/eventofuturo
+/eventofuturo (RAW)
 + id
 + fecha (año-mes-dia)
 + descripcion (string)
-+ tipo
++ tipo (string)
