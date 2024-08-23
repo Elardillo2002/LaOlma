@@ -1,3 +1,5 @@
+@import 'src/styles.scss';
+
 main {
     margin: 2% 3%;
 }
@@ -11,12 +13,27 @@ div {
 
 img {
     justify-self: center;
+    align-self: center;
     width: 550px;
-    grid-row: 2 / -1;
+    grid-row: 1 / -1;
+    transition: transform 0.7s ease-in-out;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 28px;
 }
 
 h1, h2 {
     text-align: center;
+}
+
+br {
+    margin-bottom: 15px;
 }
 
 span {
@@ -31,19 +48,47 @@ span {
     grid-template-columns: 1fr 1.75fr;
 }
 
+.odd h2 {
+    background-color: $primary-color2100;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 5px;
+    height: 100%;
+}
+
 .odd p {
     grid-column: 1 / 2;
+
+    background-color: $primary-color2075;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
 }
+
 
 .odd img {
     grid-column: 2 / 3;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.even h1 {
-    grid-column: 2 / 3;
+.even img {
+
+    box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .even h2 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    background-color: $primary-color3100;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 5px;
+    height: 100%;
+}
+
+.even p {
+    background-color: $primary-color3075;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -24,6 +25,8 @@ import { CollaborateComponent } from './components/collaborate/collaborate.compo
 import { ImageCardComponent } from './components/image-card/image-card.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MapsComponent } from './components/maps/maps.component';
+import { PartnerCompaniesComponent } from './components/partner-companies/partner-companies.component';
+import { HonoraryMemberComponent } from './components/honorary-member/honorary-member.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +45,16 @@ import { MapsComponent } from './components/maps/maps.component';
     CollaborateComponent,
     ImageCardComponent,
     ContactComponent,
-    MapsComponent
+    MapsComponent,
+    PartnerCompaniesComponent,
+    HonoraryMemberComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatIconModule,   
+    MatIconModule,
+    MatTooltipModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

@@ -9,7 +9,7 @@ section {
 
 article {
     display: grid;
-    grid-template-rows: 300px 0.75fr;
+    grid-template-rows: 25% 75%;
     align-items: center;
     justify-items: center;
 
@@ -31,7 +31,7 @@ img {
     border: 2px solid $primary-color4050;
 
     margin-top: 10px;
-    width: 19.5vw;
+    width: 90%;
 }
 
 p:nth-child(1) {
