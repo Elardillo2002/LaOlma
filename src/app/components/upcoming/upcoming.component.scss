@@ -32,16 +32,16 @@ h2 {
 h3 {
     font-size: 25px;
     position: relative;
-    bottom: -40px;
+    bottom: -45px;
     font-family: "Roboto", sans-serif;
 }
 
-h2, h3 {
+h2, h3, p {
     text-align: right;
 }
 
 p {
-    text-align: right;
+    margin: 5px;
 }
 
 span {
@@ -53,13 +53,114 @@ a {
     font-size: 20px;
     margin: 20px 0;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
     background-color: $primary-color3100;
     opacity: 1;
     grid-column: 1 / -1;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
-a:hover {
-    opacity: 0.7;
+@media (max-width:1550px) {
+    article {
+        grid-template-columns: 100px 250px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1200px) {
+    article {
+        grid-template-columns: 60px 225px;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:950px) {
+    section {
+        grid-template-columns: 1fr;
+    }    
+    
+    article {
+        grid-template-columns: 100px 250px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) {
+    
+    article {
+        grid-template-columns: 70px 220px;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        margin: 0;
+    }
 }

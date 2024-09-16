@@ -1,28 +1,26 @@
 @import 'src/styles.scss';
 
-div {
+.container {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 565px;
-    background-image: url("/assets/images/421957054_10220278329102968_8473322325660952358_n.webp");
-}
+    background-image: url("/assets/images/Portada.webp");
 
-div div {
-    position: relative;
-    left: 50%;
-    top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    min-height: 300px;
-    transform: translate(-50%, -50%);
-    width: 65%;
-
+    div {
+        height: 300px;
+        width: 1000px;
     
-    background: $secondary-color4050;
-    color: white;
-    font-size: 20px;
-    text-align: center;
+        background: $secondary-color4050;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 h1 {
@@ -34,26 +32,72 @@ h1 {
 
 a {
     background-color: $primary-color2100;
-    border: 0.5px solid $primary-color2100;
     border-radius: 10px;
-    color: white;
+    color: black;
     padding: 20px;
     text-decoration: none;
-}
 
-a:hover, a:active {
-    border: 1px solid white;
-}
-
-@media (max-width: 1000px) {
-    h1 {
-        font-size: 2rem;
-        padding: 15vh 0 0 2vh;
+    &:hover, &:active {
+        border: 2px solid $primary-color4100;
     }
 }
 
-@media (max-width: 517px) {
+@media (max-width:1150px) {
+    div div {
+        width: 750px;
+    }
+
     h1 {
-        padding: 10vh 0 0 2vh;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1000px) {
+    div div {
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    div div {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    div div {
+        width: 400px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        min-height: 450px;
+
+        div {
+            height: 150px;
+            width: 280px;
+        }
+    }
+
+    h1 {
+        padding: 10px 0;
+        font-size: 20px;
     }
 }

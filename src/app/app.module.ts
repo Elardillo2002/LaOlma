@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { StickyPhotoComponent } from './components/sticky-photo/sticky-photo.component';
-import { DescriptionComponent } from './components/description/description.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 import { LastMeetingsComponent } from './components/last-meetings/last-meetings.component';
 import { UpcomingComponent } from './components/upcoming/upcoming.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -27,6 +27,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { PartnerCompaniesComponent } from './components/partner-companies/partner-companies.component';
 import { HonoraryMemberComponent } from './components/honorary-member/honorary-member.component';
+import { FutureEventsComponent } from './components/future-events/future-events.component';
+import { PastEventsComponent } from './components/past-events/past-events.component';
+import { PayMethodsComponent } from './components/pay-methods/pay-methods.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,7 @@ import { HonoraryMemberComponent } from './components/honorary-member/honorary-m
     HomeComponent,
     HeaderComponent,
     StickyPhotoComponent,
-    DescriptionComponent,
+    CarouselComponent,
     LastMeetingsComponent,
     UpcomingComponent,
     FooterComponent,
@@ -47,7 +50,10 @@ import { HonoraryMemberComponent } from './components/honorary-member/honorary-m
     ContactComponent,
     MapsComponent,
     PartnerCompaniesComponent,
-    HonoraryMemberComponent
+    HonoraryMemberComponent,
+    FutureEventsComponent,
+    PastEventsComponent,
+    PayMethodsComponent
   ],
   imports: [
     AppRoutingModule,

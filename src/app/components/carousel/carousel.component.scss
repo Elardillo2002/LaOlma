@@ -15,7 +15,7 @@ article {
     position: relative;
 }
 
-h1, p, a, img {
+a, h1, img, p {
     display: none;
 }
 
@@ -88,8 +88,12 @@ mat-icon {
 
     cursor: pointer;
     opacity: 0.75;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
-mat-icon:hover {
-    opacity: 1;
+@media (max-width:1550px) {
+    
 }

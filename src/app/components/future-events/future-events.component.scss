@@ -1,0 +1,87 @@
+@import 'src/styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1vw;
+    row-gap: 5vh;
+    justify-items: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 125px 175px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
+    padding: 20px;
+
+    border: 2px solid $primary-color4100;
+    border-radius: 20px;
+    background: linear-gradient(167deg, white 50%, $secondary-color5100 100%);
+}
+
+h2 {
+    font-size: 70px;
+    margin: 1px;
+    padding: 1px;
+    font-family: "Playwrite HR Lijeva", cursive;
+    color: $primary-color6100;
+    text-align: right;
+    line-height: 0.5;
+}
+
+p {
+    margin: 0;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+span {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Playwrite DK Uloopet", cursive;
+}
+
+@media (max-width:1200px) {
+    section {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
+
+@media (max-width:800px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        grid-template-columns: 150px 1fr;
+    }
+}
+
+@media (max-width:550px) {
+    article {
+        grid-template-columns: 150px 175px;
+    }
+}
+
+@media (max-width:400px) {
+    article {
+        grid-template-columns: 75px 150px;
+    }
+
+    img {
+        width: 75px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    span {
+        font-size: 25px;
+    }
+}

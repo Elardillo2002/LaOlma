@@ -1,10 +1,11 @@
 <section>
     <h1> Últimos eventos </h1>
     <article *ngFor="let event of lastEvents">
-        <img src="/assets/images/FOTO-EVENTO1.webp" alt="Foto del evento 1">
+        <!-- <img [src]="event.imageUrl" alt="Imagen del evento"> -->
+        <img src="../../../assets/images/419725296_10234112509455401_5562811784801490426_n (1).webp" alt="Imagen del evento">
         <div>
             <p> {{ event.date }} </p>
-            <p> {{ event.descripcion }}  </p>
+            <p> {{ event.text }}<span *ngIf="event.seeMore">...</span><br><a routerLink="/activities" *ngIf="event.seeMore" class="seeMore"> ver más...</a></p>
         </div>
     </article>
     <a routerLink="/activities"> Ver más actividades </a>

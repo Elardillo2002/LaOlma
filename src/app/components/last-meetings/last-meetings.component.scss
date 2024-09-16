@@ -9,18 +9,18 @@ section {
 
 article {
     display: grid;
-    grid-template-rows: 25% 75%;
-    align-items: center;
+    grid-template-rows: 150px 75%;
     justify-items: center;
 
     background-color: $primary-color2100;
     border: 3px solid $primary-color4050;
     padding: 10px;
     width: 20vw;
+    row-gap: 2.5vh;
 }
 
 div {
-    width: 90%;
+    padding: 1vh 1vw;
 }
 
 h1 {
@@ -31,15 +31,19 @@ img {
     border: 2px solid $primary-color4050;
 
     margin-top: 10px;
-    width: 90%;
+    width: 100%;
 }
 
 p:nth-child(1) {
     text-align: right;
 }
 
-a {
-    color: white;
+.seeMore {
+    color: $primary-color6100;
+}
+
+section > a {
+    color: black;
     font-size: 20px;
     opacity: 1;
     text-decoration: none;
@@ -50,6 +54,41 @@ a {
     padding: 10px;
 }
 
-a:hover {
+section a:hover {
     opacity: 0.7;
+}
+
+@media (max-width:1250px) {
+    article {
+        grid-template-rows: 100px 80%;
+    }
+
+    p, section a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:950px) {
+    section {
+        grid-template-columns: 1fr;
+        row-gap: 1vh;
+    }
+    
+    article {
+        width: 40vw;        
+        grid-template-rows: 45% 55%;
+        row-gap: 0.75vh;
+    }
+}
+
+@media (max-width:550px) {    
+    article {       
+        grid-template-rows: 35% 65%;
+    }
+}
+
+@media (max-width:550px) {    
+    article {       
+        grid-template-rows: 20% 80%;
+    }
 }

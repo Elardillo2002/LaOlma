@@ -1,0 +1,38 @@
+<section>
+    <h1> Formas de pago </h1>
+    <article>
+        <h2> Transferencia bancaria </h2>
+        <img src="assets/images/Tarjeta.webp" alt="Pago con tarjeta">
+        <p>
+            <b>Cuenta: </b><br>
+            <button mat-raised-button 
+                [matTooltipDisabled]="true"
+                #tooltipIBAN="matTooltip"
+                matTooltip="¡Texto copiado!"
+                (click)="copyText('ES04 3035 0273 2827 3003 6357', tooltipIBAN)"
+                aria-label="Copiar el texto">
+                <mat-icon>content_copy</mat-icon>
+            </button>
+            <span>ES04 3035 0273 2827 3003 6357</span><br> <b>Concepto:</b> Nombre y apellidos
+        </p>
+    </article>
+    <article>
+        <h2> Pago por bizum </h2>
+        <img src="assets/images/Bizum.webp" alt="Pago por bizum">
+        <p> <b>Bizum</b> al 
+            <button mat-raised-button 
+                [matTooltipDisabled]="true"
+                #tooltipPhone="matTooltip"
+                matTooltip="¡Texto copiado!"
+                (click)="copyText('615 192 105', tooltipPhone)"
+                aria-label="Copiar el texto">
+                <mat-icon>content_copy</mat-icon>
+            </button>
+            <span>615 192 105</span> (Ángel) </p>
+    </article>
+    <article>
+        <h2> Pago en mano </h2>
+        <img src="assets/images/Pagoenmano.webp" alt="Pago en mano">
+        <p><a href="https://wa.me/639174882"><i class="fa-brands fa-whatsapp"></i><b> Whatsapp:</b> 639 174 882 (Ana) </a></p>
+    </article>
+</section>

@@ -26,11 +26,11 @@ hr {
 
 img {
     justify-self: center;
-    width: 380px;
+    align-self: center;
+    width: 20vw;
 }
 
 a {
-    font-size: 26px;
     color: black;
     padding: 16px;
     text-decoration: none;
@@ -40,17 +40,55 @@ a {
         rgba(45, 35, 66, .4) 0 2px 4px,
         rgba(45, 35, 66, .3) 0 7px 13px -3px,
         rgba(58, 65, 111, .5) 0 -3px 0 inset;
+
+    &:hover {
+        box-shadow: 
+            rgba(45, 35, 66, .4) 0 4px 8px, 
+            rgba(45, 35, 66, .3) 0 7px 13px -3px, 
+            #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+    }
 }
-  
-a:hover {
-    box-shadow: 
-        rgba(45, 35, 66, .4) 0 4px 8px, 
-        rgba(45, 35, 66, .3) 0 7px 13px -3px, 
-        #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
+
+@media (max-width:1200px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    img {
+        width: 320px;
+    }
+
+    div {
+        margin: 0;
+    }
+
+    a {
+        padding: 8px;
+    }
+
+    hr {
+        width: 35vw;
+    }
 }
-  
-a:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
+
+@media (max-width:700px) {
+    img {
+        width: 100%;
+    }
+
+    hr {
+        width: 30vw;
+    }
+}
+
+@media (max-width:425px) {
+    p, a {
+        font-size: 16px;
+    }
 }

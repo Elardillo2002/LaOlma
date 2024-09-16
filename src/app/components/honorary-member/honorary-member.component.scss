@@ -4,43 +4,62 @@
 h1 {
     font-size: 50px;
     font-family: "Whisper", cursive;
-    margin-bottom: 10px;
-    margin-left: 40px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 img {
     width: 450px;
 }
 
-article + p {
+a {
     color: #474747;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-div:first-of-type {
-    position: absolute;
-    background-color: $primary-color5100;
-    border-radius: 15px;
-    padding: 10px 30px;
-    width: 60vw;
-    top: 18vh;
-    left: 2vw;
-    color: white;
-    opacity: 0;
+.mediumShot {
+    display: none;
 }
 
-#triangle {
-    opacity: 0;
-    position: absolute;
-    top: 50vh;
-    left: 65.4vw;
-    border: solid 25px transparent;
-    border-left-color: $primary-color5100;
+@media (max-width: 1250px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 325px;
+    }
 }
 
-@media (min-width: 1455px) and (max-width:1800px) {
-    article:hover div,
-    article:hover #triangle {
-        opacity: 1;
-        transition: opacity 1s ease;
+@media (max-width:800px) {
+    h1 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .generalShot {
+        display: none;
+    }
+
+    .mediumShot {
+        display: block;
+    }
+}
+
+@media (max-width:500px) {
+    img {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    a {
+        font-size: 16px;
     }
 }

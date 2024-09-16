@@ -1,0 +1,12 @@
+<section  *ngFor="let event of pastEvents; let i = index">
+    <article [ngClass]="{'odd': i % 2 === 0, 'even': i % 2 !== 0}">
+        <h1> {{ event.titulo }} </h1>
+        <p> {{ event.descripcion }} <br><br>
+            <strong> Fecha: </strong> {{ event.fecha }} <br><br>
+            <strong> Participantes: </strong> {{ event.participantes }} <br><br>
+            <strong> Lugar: </strong> {{ event.lugar }} </p>
+         <!-- <img [src]="event.imagen" alt="Imagen">  -->
+        <img src="assets/images/FOTO-EVENTO1.webp" alt="Imagen">
+        <hr>
+    </article>  
+</section>

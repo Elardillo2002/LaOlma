@@ -1,0 +1,114 @@
+@import 'src/styles.scss';
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+article {
+    display: grid;
+    grid-template-rows: 60px 2fr 125px;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    background-color: $secondary-color5075;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+h2 {
+    text-transform: uppercase;
+    align-self: center;
+}
+
+img {
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+a {
+    color: $primary-color6100;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button {
+    padding: 7px;
+    border-radius: 0;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+mat-icon {
+    font-size: 20px;
+    display: inline;
+    align-self: center;
+}
+
+span {
+    position: relative;
+    bottom: 2px;
+    padding: 7px;
+    font-size: 20px;
+    border: 2px solid #8f8f9d;
+    border-left: none;
+}
+
+@media (max-width:1450px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2vh;
+    }
+
+    article:last-of-type {
+        grid-column: 1 / -1;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    button {
+        padding: 6px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:800px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:500px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    button {
+        padding: 3px;
+    }
+
+    a, p, span, mat-icon {
+        font-size: 15px;
+        border: none;
+    }
+}

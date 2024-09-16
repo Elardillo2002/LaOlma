@@ -61,7 +61,9 @@ Instalación: https://github.com/coreybutler/nvm-windows/releases
 /eventopasado (FORM-DATA)
 + id (autogenerado)
 + fecha (año-mes-dia)
++ titulo (string)
 + descripcion (string)
++ participantes (string)
 + imagen (array de bytes)
 
 /eventofuturo (RAW)

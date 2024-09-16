@@ -5,13 +5,37 @@ div {
     display: inline-block;
 }
 
-div img {
+img {
     display: block;
     width: 400px;
     border-radius: 20px;
+    
+    @media (max-width:1550px) {
+        width: 300px;
+    }
+
+    @media (max-width:1250px) {
+        width: 450px;
+    }
+
+    @media (max-width:950px) {
+        width: 375px;
+    }
+
+    @media (max-width:800px) {
+        width: 300px;
+    }
+
+    @media (max-width:650px) {
+        width: 400px;
+    }
+
+    @media (max-width:450px) {
+        width: 250px;
+    }
 }
 
-div p {
+p {
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
     top: 0;

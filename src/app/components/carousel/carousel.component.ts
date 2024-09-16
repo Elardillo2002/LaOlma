@@ -9,17 +9,17 @@ interface carouselImage {
     imageAlt: string;
 }
 @Component({
-  selector: 'app-description',
-  templateUrl: './description.component.html',
-  styleUrls: ['./description.component.scss']
+  selector: 'app-carousel',
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.scss']
 })
 
-export class DescriptionComponent {
+export class CarouselComponent {
     @Input() articles: carouselImage[] = [];
     selectedIndex = 0;
 
     ngOnInit(): void {
-        setInterval(() => this.onNextClick(), 10000);
+        setInterval(() => this.onNextClick(), 100000);
     }
 
     selectArticle(index: number): void {

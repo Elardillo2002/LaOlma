@@ -4,13 +4,13 @@
         <article>
             <h1> Hazte socio </h1>
             <p> Con tu cuota, nos ayudas a crecer y a financiar los gastos de nuestras actividades y el material necesario </p>
-            <h3> Cuotas anuales: </h3>
+            <h2> Cuotas anuales: </h2>
             <ul>
                 <li> 20€/año cuota general </li>
                 <li> 10€/año (jóvenes de 17 a 27 años) </li>
                 <li> 5€/año niños (hasta 16 años) </li>
             </ul>
-            <h3> Datos requeridos </h3>
+            <h2> Datos requeridos </h2>
             <ul>
                 <li> Nombre y apellidos </li>
                 <li> Número de teléfono </li>
@@ -21,42 +21,7 @@
             <app-honorary-member></app-honorary-member>
         </article>
     </section>
-    <section>
-        <h2> Formas de pago </h2>
-        <article>
-            <h3> Transferencia bancaria </h3>
-            <img src="assets/images/Tarjeta.png" alt="Pago con tarjeta">
-            <p>
-                <b>Cuenta: </b>
-                <button mat-raised-button 
-                    [matTooltipDisabled]="true"
-                    #tooltipIBAN="matTooltip"
-                    matTooltip="¡Texto copiado!"
-                    (click)="copyText('ES04 3035 0273 2827 3003 6357', tooltipIBAN)">
-                    <mat-icon>content_copy</mat-icon>
-                </button>
-                <span>ES04 3035 0273 2827 3003 6357</span><br> <b>Concepto:</b> Nombre y apellidos
-            </p>
-        </article>
-        <article>
-            <h3> Pago por bizum </h3>
-            <img src="assets/images/Bizum.png" alt="Pago por bizum">
-            <p> <b>Bizum</b> al 
-                <button mat-raised-button 
-                    [matTooltipDisabled]="true"
-                    #tooltipPhone="matTooltip"
-                    matTooltip="¡Texto copiado!"
-                    (click)="copyText('615 192 105', tooltipPhone)">
-                    <mat-icon>content_copy</mat-icon>
-                </button>
-                <span>615 192 105</span> (Ángel) </p>
-        </article>
-        <article>
-            <h3> Pago en mano </h3>
-            <img src="assets/images/Pagoenmano.png" alt="Pago en mano">
-            <p><a href="https://wa.me/639174882"><i class="fa-brands fa-whatsapp"></i><b> Whatsapp:</b> 639 174 882 (Ana) </a></p>
-        </article>
-    </section>
+    <app-pay-methods></app-pay-methods>
     <app-partner-companies></app-partner-companies>
 </main>
 <app-footer></app-footer>

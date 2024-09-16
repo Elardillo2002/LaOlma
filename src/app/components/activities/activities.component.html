@@ -1,58 +1,17 @@
 <app-header></app-header>
 <main>
     <h1> ACTIVIDADES </h1>
-    <section *ngFor="let event of pastEvents; let i = index">
+    <section>
         <p> A continuación, se detallan las actuaciones realizadas por el grupo Medioambiental
             La Olma en el año 2024. </p>
         <p> Nuestras actividades van encaminadas especialmente a la divulgación y la
             educación en el respeto y la conservación de los entornos naturales que nos
             rodean. Para ello, contamos con la ayuda de nuestros socios, voluntarios y
             colaboradores que participan activamente en las actividades. </p>
-        <div class="odd">
-            <h2> Foro de la Naturaleza organizado por GREFA </h2>
-            <p> Participamos en el Foro de la Naturaleza organizado por
-                GREFA y el Ayuntamiento de la localidad en el Centro de Interpretación de
-                los Comuneros. Se contó con participantes como Acenva, el Colectivo
-                Bellotero, la Erasmus Student Network de la Universidad de Valladolid, el
-                divulgador y "youtuber" Fray Sulfato, el abogado ambientalista Eduardo Gil y, por
-                supuesto, el equipo de GREFA. Todos reunidos con un único objetivo: la
-                participación juvenil en la conservación de la naturaleza en Europa <br>
-                <span> Fecha: </span> 3 de febrero de 2024 <br>
-                <span> Participantes: </span> Más de 90 estudiantes de Salamanca y Valladolid y
-                voluntarios asociaciones de conservación de la Naturaleza. <br>
-                <span> Lugar: </span> Villalar. GREFA. </p>
-            <img src="assets/images/3 de febrero 2024.jpg" alt="Imagen">
-        </div>     
-        <div class="even">
-            <h2> Foro de la Naturaleza organizado por GREFA </h2>
-            <p> Participamos en el Foro de la Naturaleza organizado por
-                GREFA y el Ayuntamiento de la localidad en el Centro de Interpretación de
-                los Comuneros. Se contó con participantes como Acenva, el Colectivo
-                Bellotero, la Erasmus Student Network de la Universidad de Valladolid, el
-                divulgador y "youtuber" Fray Sulfato, el abogado ambientalista Eduardo Gil y, por
-                supuesto, el equipo de GREFA. Todos reunidos con un único objetivo: la
-                participación juvenil en la conservación de la naturaleza en Europa <br>
-                <span> Fecha: </span> 3 de febrero de 2024 <br>
-                <span> Participantes: </span> Más de 90 estudiantes de Salamanca y Valladolid y
-                voluntarios asociaciones de conservación de la Naturaleza. <br>
-                <span> Lugar: </span> Villalar. GREFA. </p>
-            <img src="assets/images/3 de febrero 2024.jpg" alt="Imagen">
-        </div> 
-        <div [ngClass]="{'odd': i % 2 === 0, 'even': i % 2 !== 0}">
-            <h2> event.titulo </h2>
-            <p> {{ event.descripcion }} <br>
-                <span> Fecha: </span> event.fecha <br>
-                <span> Participantes: </span> event.participantes <br>
-                <span> Lugar: </span> event.lugar </p>
-            <!-- <img [src]="event.imagen" alt="Imagen"> -->
-            <img src="assets/images/3 de febrero 2024.jpg" alt="Imagen">
-        </div>  
     </section>
-    <section>
-        <div *ngFor="let event of futureEvents">
-            <h3> {{ event.fecha }} </h3>
-            <p> {{ event.descripcion }} </p>
-        </div>
-    </section>
+    <h2> FUTUROS EVENTOS </h2>
+    <app-future-events></app-future-events>
+    <h2> EVENTOS PASADOS </h2>
+    <app-past-events></app-past-events>
 </main>
 <app-footer></app-footer>

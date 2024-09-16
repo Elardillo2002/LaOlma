@@ -15,7 +15,6 @@ export class UpcomingComponent implements OnInit {
     
     ngOnInit(): void {
         this.eventService.getUpcomingEvents().subscribe((events: futureEvent[]) => {
-            this.upcomingEvents = events;
             this.upcomingEvents = events.map(event => {
                 const date = this.formatDate(new Date(event.fecha));
                 return {
@@ -25,7 +24,8 @@ export class UpcomingComponent implements OnInit {
             })
         });
     }
-
+    
+    // TODO: Move that to eventService
     formatDate(formatedDate: Date): { dayName: string, day: string, monthName: string } {
         const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
         const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];

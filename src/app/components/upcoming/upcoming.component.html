@@ -1,7 +1,7 @@
 <section>
     <h1> Próximos eventos </h1>
     <article *ngFor="let event of upcomingEvents">
-        <img [src]="getImage(event.tipo)" alt="Plantación">
+        <img [src]="getImage(event.tipo)" [alt]="event.tipo">
         <div>
             <h3> {{ event.date?.dayName }} </h3>
             <h2> {{ event.date?.day }} <span> de {{ event.date?.monthName }} </span></h2>
