@@ -30,6 +30,7 @@ h1 {
 img {
     border: 2px solid $primary-color4050;
 
+    max-height: 170px;
     margin-top: 10px;
     width: 100%;
 }
@@ -43,15 +44,16 @@ p:nth-child(1) {
 }
 
 section > a {
+    background-color: $primary-color2100;
+    border-radius: 10px;
     color: black;
     font-size: 20px;
     opacity: 1;
     text-decoration: none;
 
-    background-color: $primary-color3100;
     grid-column: 1 / -1;
     margin: 20px 0;
-    padding: 10px;
+    padding: 15px;
 }
 
 section a:hover {

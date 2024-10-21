@@ -1,29 +1,29 @@
 <section>
-    <h1> Formas de pago </h1>
+    <h1> {{ "payMethods.title" | translate }} </h1>
     <article>
-        <h2> Transferencia bancaria </h2>
-        <img src="assets/images/Tarjeta.webp" alt="Pago con tarjeta">
+        <h2> {{ "payMethods.subtitle1" | translate }} </h2>
+        <img src="assets/images/Tarjeta.webp" [alt]="'payMethods.alterText1' | translate">
         <p>
-            <b>Cuenta: </b><br>
+            <b>{{ "payMethods.method1" | translate }}: </b><br>
             <button mat-raised-button 
                 [matTooltipDisabled]="true"
                 #tooltipIBAN="matTooltip"
-                matTooltip="¡Texto copiado!"
+                [matTooltip]="'payMethods.toolTip' | translate"
                 (click)="copyText('ES04 3035 0273 2827 3003 6357', tooltipIBAN)"
                 aria-label="Copiar el texto">
                 <mat-icon>content_copy</mat-icon>
             </button>
-            <span>ES04 3035 0273 2827 3003 6357</span><br> <b>Concepto:</b> Nombre y apellidos
+            <span>ES04 3035 0273 2827 3003 6357</span><br> <b> {{ "payMethods.method21" | translate }}:</b> {{ "payMethods.method22" | translate }}
         </p>
     </article>
     <article>
-        <h2> Pago por bizum </h2>
-        <img src="assets/images/Bizum.webp" alt="Pago por bizum">
-        <p> <b>Bizum</b> al 
+        <h2> {{ "payMethods.subtitle2" | translate }} </h2>
+        <img src="assets/images/Bizum.webp" [alt]="'payMethods.alterText2' | translate">
+        <p> {{ "payMethods.method3" | translate }}
             <button mat-raised-button 
                 [matTooltipDisabled]="true"
                 #tooltipPhone="matTooltip"
-                matTooltip="¡Texto copiado!"
+                [matTooltip]="'payMethods.toolTip' | translate"
                 (click)="copyText('615 192 105', tooltipPhone)"
                 aria-label="Copiar el texto">
                 <mat-icon>content_copy</mat-icon>
@@ -31,7 +31,7 @@
             <span>615 192 105</span> (Ángel) </p>
     </article>
     <article>
-        <h2> Pago en mano </h2>
+        <h2> {{ "payMethods.subtitle3" | translate }} </h2>
         <img src="assets/images/Pagoenmano.webp" alt="Pago en mano">
         <p><a href="https://wa.me/639174882"><i class="fa-brands fa-whatsapp"></i><b> Whatsapp:</b> 639 174 882 (Ana) </a></p>
     </article>

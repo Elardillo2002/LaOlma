@@ -9,23 +9,27 @@ import { DomSanitizer } from '@angular/platform-browser';
     styleUrls: ['./last-meetings.component.scss']
 })
 export class LastMeetingsComponent implements OnInit {
-    seeMore = true;
+    /** Variable for pastEvent interface */
     lastEvents: pastEvent[] = [];
 
+    /** Variable for formatDescription sentences */
+    seeMore = true;
+
+    /** Component constructor
+     * @param {EventService} eventService Take eventService functions
+    */
     constructor (
-        private eventService: EventService,
-        private sanitizer: DomSanitizer
+        private eventService: EventService
     ) {}
   
     ngOnInit(): void {
+        /** Take last three pastEvents from database and format the description, the date and create an URL for the image */
         this.eventService.getLastEvents().subscribe((events: pastEvent[]) => {
             this.lastEvents = events.map(event => {
 
-                const { text, seeMore } = this.formatDescription(event.descripcion);
-                const date = this.formatDate(new Date(event.fecha));
-                const imageUrl = this.formatImage(event.imagen);
-
-                console.log(event.imagen.length);
+                const { text, seeMore } = this.eventService.formatDescription(event.descripcion);
+                const date = this.eventService.formatDate(new Date(event.fecha));
+                const imageUrl = this.eventService.formatImage(event.imagen);
                 
                 return {
                     ...event,
@@ -36,29 +40,5 @@ export class LastMeetingsComponent implements OnInit {
                 }
             })
         });
-    }
-
-    // TODO: Move that to eventService
-    formatDescription(description: string): { text: string, seeMore: boolean } {
-        const words = description.split(' ');
-        const seeMore = words.length >= 20;
-        const text = seeMore ? words.slice(0, 20).join(' ') : description;
-
-        return { text, seeMore };
-    }
-
-    formatDate(date: Date): string {
-        const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-
-        const day = date.getDate().toString();
-        const monthName = months[date.getMonth()];
-        
-        return `${day} de ${monthName} de ${date.getFullYear()}`;
-    }
-
-    formatImage(image: string) {
-        let blob = new Blob([image], { type: 'image/webp' });
-        let imageUrl = URL.createObjectURL(blob);
-        return imageUrl;
     }
 }

@@ -1,29 +1,26 @@
-<section>
-    <button>
-        <mat-icon (click)="onPrevClick()">keyboard_arrow_left</mat-icon>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <button class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
     </button>
-    
-    <article>
-        <img *ngFor="let article of articles; let i = index"
-            [src]="article.imageSrc" [alt]="article.imageAlt"
-            [ngClass]="{'image-active': selectedIndex === i}">
 
-        <div class="dot">
-            <span *ngFor="let dot of articles; let i = index"
-                (click)="selectArticle(i)" 
-                [ngClass]="{'active': selectedIndex === i}"></span>
+    <div class="carousel-inner">
+        <div class="carousel-item active" *ngFor="let article of articles; let i = index" [class.active]="i === 0">
+            <img [src]="article.imageSrc" class="d-block w-100" [alt]="article.imageAlt" loading="lazy">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ article.title }}</h5>
+                <p>{{ article.text }}</p>
+                <a [routerLink]="article.link">{{ article.linkWord }}</a>
+            </div>
         </div>
-    </article>
+    </div>
 
-    <article>
-        <div *ngFor="let article of articles; let i = index">
-            <h1 [ngClass]="{'text-active': selectedIndex === i}"> {{ article.title }} </h1>
-            <p [ngClass]="{'text-active': selectedIndex === i}"> {{article.text}} </p>
-            <a [routerLink]="article.link" [ngClass]="{'text-active': selectedIndex === i}"> {{ article.linkWord }} </a>
-        </div>
-    </article>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-    <button>
-        <mat-icon (click)="onNextClick()">keyboard_arrow_right</mat-icon>
+    <button class="carousel-control-next" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
     </button>
-</section>
+</div>  

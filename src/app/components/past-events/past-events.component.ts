@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from 'app/services/event.service';
-import { futureEvent } from 'app/models/futureEvent';
 import { pastEvent } from 'app/models/pastEvent';
 
 @Component({
@@ -9,21 +8,28 @@ import { pastEvent } from 'app/models/pastEvent';
     styleUrls: ['./past-events.component.scss']
 })
 export class PastEventsComponent implements OnInit {
+    /** Variable for pastEvent interface */
     pastEvents: pastEvent[] = [];
 
+    /** Component constructor
+     * @param {EventService} eventService Take eventService functions
+    */
     constructor (private eventService: EventService) {}
     
     ngOnInit(): void {
+        /** Take all pastEvents from database and format the date and create an URL for the image */
         this.eventService.getPastEvents().subscribe((events: pastEvent[]) => {
-            this.pastEvents = events.map(event => ({
-                ...event,
-                imagen: this.createDataUrl(event.imagen)
-            }));
+            this.pastEvents = events.map(event => {
+
+                const date = this.eventService.formatDate(new Date(event.fecha));
+                const imageUrl = this.eventService.formatImage(event.imagen);
+                
+                return {
+                    ...event,
+                    date,
+                    imageUrl
+                }
+            })
         });
-    }
-    
-    // TODO: Move that to eventService
-    createDataUrl(base64String: string): string {
-        return `data:image/webp;base64,${base64String}`;
     }
 }

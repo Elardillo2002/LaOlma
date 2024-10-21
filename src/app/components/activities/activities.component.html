@@ -1,17 +1,13 @@
-<app-header></app-header>
+<app-navbar></app-navbar>
 <main>
-    <h1> ACTIVIDADES </h1>
+    <h1> {{ "activities.title1" | translate }} </h1>
     <section>
-        <p> A continuación, se detallan las actuaciones realizadas por el grupo Medioambiental
-            La Olma en el año 2024. </p>
-        <p> Nuestras actividades van encaminadas especialmente a la divulgación y la
-            educación en el respeto y la conservación de los entornos naturales que nos
-            rodean. Para ello, contamos con la ayuda de nuestros socios, voluntarios y
-            colaboradores que participan activamente en las actividades. </p>
+        <p> {{ "activities.sentence1" | translate }} </p>
+        <p> {{ "activities.sentence2" | translate }} </p>
     </section>
-    <h2> FUTUROS EVENTOS </h2>
+    <h2> {{ "activities.title2" | translate }} </h2>
     <app-future-events></app-future-events>
-    <h2> EVENTOS PASADOS </h2>
+    <h2 class="mt-4"> {{ "activities.title3" | translate }} </h2>
     <app-past-events></app-past-events>
 </main>
 <app-footer></app-footer>

@@ -1,26 +1,26 @@
-<app-header></app-header>
+<app-navbar></app-navbar>
 <main>
     <app-maps></app-maps>
     <section>
-        <h2> También puedes escribirnos </h2>
+        <h2> {{ "contact.title1" | translate }} </h2>
         <!-- TODO: Añadir dirección de correo -->
         <form>
             <label for="name">
                 <mat-icon> person </mat-icon>
             </label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
+            <input type="text" name="name" id="name" [placeholder]="'contact.input1' | translate">
             <label for="email">
                 <mat-icon> email </mat-icon>
             </label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico">
+            <input type="email" name="email" id="email" [placeholder]="'contact.input2' | translate">
             <label for="subject">
                 <mat-icon> edit </mat-icon>
             </label>
-            <input type="text" name="subject" id="subject" placeholder="Asunto">
+            <input type="text" name="subject" id="subject" [placeholder]="'contact.input3' | translate">
             <label for="textarea"><mat-icon>chat_bubble</mat-icon></label>
-            <textarea name="message" maxlength="750" rows="6" id="textarea" placeholder="Mensaje"></textarea>
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
+            <textarea name="message" maxlength="750" rows="6" id="textarea" [placeholder]="'contact.input4' | translate"></textarea>
+            <input type="reset" [value]="'contact.input5' | translate">
+            <input type="submit" [value]="'contact.input6' | translate">
         </form>
     </section>
 </main>

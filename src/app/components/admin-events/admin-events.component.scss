@@ -1,0 +1,63 @@
+@import '/src/styles.scss';
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary-color6100;
+    padding: 5px;
+}
+
+a {
+    padding: 8px;
+    text-decoration: none;
+    color: $primary-color4100;
+    border-radius: 10px;
+    border: 1px solid $primary-color4100;
+
+    &:hover {
+        background-color: $primary-color4100;
+        color: white;
+    }
+}
+
+button {
+    border: 1px solid #6C757D;
+}
+
+div {
+    margin: 10px 0;
+}
+
+label, input, textarea, a {
+    font-size: 18px;
+}
+
+input, select {
+    height: 5vh;
+}
+
+h2 {
+    padding: 7px;
+}
+
+hr {
+    margin: 5vh 0;
+    border: none;
+}
+
+img {
+    width: 100px;
+}
+
+.future {
+    background-color: #77E6E0;
+}
+
+.past {
+    background-color: #7783E6;
+}
+
+.col6 {
+    display: flex;
+}

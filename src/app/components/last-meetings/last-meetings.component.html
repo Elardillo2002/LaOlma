@@ -1,12 +1,12 @@
 <section>
-    <h1> Últimos eventos </h1>
+    <h1> {{ "lastMeetings.title" | translate }} </h1>
     <article *ngFor="let event of lastEvents">
         <!-- <img [src]="event.imageUrl" alt="Imagen del evento"> -->
-        <img src="../../../assets/images/419725296_10234112509455401_5562811784801490426_n (1).webp" alt="Imagen del evento">
+        <img src="../../../assets/images/Limpieza en el Esgueva.webp" [alt]="'lastMeetings.alterText' | translate ">
         <div>
-            <p> {{ event.date }} </p>
-            <p> {{ event.text }}<span *ngIf="event.seeMore">...</span><br><a routerLink="/activities" *ngIf="event.seeMore" class="seeMore"> ver más...</a></p>
+            <p> {{ event.date?.day }} de {{ event.date?.monthName }} de {{ event.date?.year }} </p>
+            <p> {{ event.text }}<span *ngIf="event.seeMore">...</span><br><a routerLink="/activities" *ngIf="event.seeMore" class="seeMore"> {{ "lastMeetings.seeMore" | translate }}</a></p>
         </div>
     </article>
-    <a routerLink="/activities"> Ver más actividades </a>
+    <a routerLink="/activities"> {{ "lastMeetings.moreActivities" | translate }} </a>
 </section>

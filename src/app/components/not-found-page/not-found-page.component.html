@@ -1,11 +1,11 @@
-<app-header></app-header>
+<app-navbar></app-navbar>
 <main>
     <div>
         <h1> 404 </h1>
         <hr>
-        <p> {{ "pageNavigation.404" | translate }} </p>
-        <p> {{ "pageNavigation.dontExists" | translate }} </p>
-        <a routerLink="/home"> {{ "pageNavigation.returnHome" | translate }} </a>
+        <p> {{ "notFoundPage.sentence1" | translate }} </p>
+        <p> {{ "notFoundPage.sentence2" | translate }} </p>
+        <a routerLink="/home"> {{ "notFoundPage.link" | translate }} </a>
     </div>
     <img src="assets/images/tree.gif" alt="404 Not found">
 </main>

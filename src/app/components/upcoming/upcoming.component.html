@@ -1,12 +1,13 @@
 <section>
-    <h1> Próximos eventos </h1>
+    <h1> {{ "upcoming.title" | translate }} </h1>
     <article *ngFor="let event of upcomingEvents">
-        <img [src]="getImage(event.tipo)" [alt]="event.tipo">
+        <img [src]="getType(event.tipo)" [alt]="event.tipo">
         <div>
             <h3> {{ event.date?.dayName }} </h3>
             <h2> {{ event.date?.day }} <span> de {{ event.date?.monthName }} </span></h2>
-            <p> {{ event.descripcion }} </p>
+            <p> {{ event.titulo }} </p>
+            <p class="fs-5"> {{ event.lugar }} </p>
         </div>
     </article>
-    <a routerLink="/contact"> Contacto </a>
+    <a routerLink="/contact"> {{ "upcoming.link" | translate }} </a>
 </section>

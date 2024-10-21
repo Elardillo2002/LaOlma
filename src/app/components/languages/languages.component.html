@@ -1,4 +1,4 @@
-<label for="select">Idiomas:</label><br>
+<label for="select"> {{ "languages" | translate}}:</label><br>
 <select id="select" (change)="onChange($event)">
     <option *ngFor="let option of options" [value]="option.value"> {{ option.display }} </option>
 </select>

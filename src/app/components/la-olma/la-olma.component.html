@@ -1,71 +1,57 @@
-<app-header></app-header>
+<app-navbar></app-navbar>
 <main>
     <section>
-        <h1> ¿QUIÉNES SOMOS? </h1>
-        <img src="/assets/images/Plantacion.webp" alt="Plantación de árboles" id="left">   
-            <p> Somos una <strong> Asociación Medioambiental </strong> sin ánimo de lucro, formada por un grupo diverso de voluntarios apasionados y 
-            comprometidos con la protección y preservación del medio ambiente. Nuestra comunidad de voluntarios dedica su tiempo 
-            y esfuerzo a promover la <strong> sostenibilidad, el respeto por la naturaleza y la conservación de los ecosistemas, </strong> 
-            trabajando juntos para hacer una diferencia positiva en nuestro entorno y en la vida de futuras generaciones. </p>   
+        <h1> {{ "laOlma.title1" | translate }} </h1>
+        <img src="/assets/images/Plantacion.webp" [alt]="'laOlma.alterText1' | translate" id="left">   
+            <p [innerHTML]="'laOlma.sentence1' | translate">  </p>   
 
-            <h2> ¿A qué nos dedicamos? </h2>    
-            <p> Nuestra labor es el estudio, la conservación y divulgación del medio ambiente. Nos esforzamos por investigar y 
-            <strong> comprender </strong> los sistemas naturales que nos rodean, <strong> implementar estrategias </strong> efectivas para proteger y restaurar el medio ambiente, 
-            y <strong> educar </strong> a la comunidad sobre la importancia de preservar nuestro planeta. 
-            Centramos nuestra actividad tanto en Valladolid como en toda su provincia, y nuestra premisa fundamental es ser 
-            profundamente respetuosos con el entorno. Nos esforzamos por actuar de manera que no alteremos el equilibrio natural, 
-            dedicándonos exclusivamente a <strong> cuidarlo y respetarlo. </strong></p>    
-            <img src="/assets/images/Caminata.webp" alt="Caminata" id="right">
+            <h2> {{ "laOlma.subtitle1" | translate }} </h2>    
+            <p [innerHTML]="'laOlma.sentence2' | translate"></p>    
+            <img src="/assets/images/Pinar de Antequera 2.webp" [alt]="'laOlma.alterText2' | translate" id="right">
 
-            <h2> Horarios </h2>    
-            <p> Nuestras actividades se llevan a cabo todos los <strong> sábados por la mañana</strong>, a excepción de los meses de verano, 
-            y están abiertas tanto para nuestros socios como para cualquier persona interesada en acompañarnos. No es necesario 
-            ser socio para participar; cualquier individuo que comparta nuestro compromiso con el medio ambiente y desee contribuir 
-            a nuestras acciones es bienvenido. Estas jornadas son una oportunidad para aprender, colaborar y disfrutar del entorno natural 
-            mientras trabajamos juntos para cuidarlo y protegerlo. </p>
+            <h2> {{ "laOlma.subtitle2" | translate }} </h2>    
+            <p [innerHTML]="'laOlma.sentence3' | translate"></p>
     
-            <h2> ¿Qué buscamos? </h2>    
-            <p> Estamos buscando voluntarios para unirse a nuestras actividades, las cuales se desarrollan en un <strong> ambiente sano y divertido </strong> donde tú también puedes formar parte. Invitamos a todas las personas interesadas a participar, todas las actividades son aptas
-            para <strong> todas las edades </strong> y <strong> cualquier condición física. </strong> Únete a nosotros y contribuye a la protección del medio 
-            ambiente mientras disfrutas de una experiencia enriquecedora y gratificante en compañía de otros amantes de la naturaleza. </p>
+            <h2> {{ "laOlma.subtitle3" | translate }} </h2>    
+            <p [innerHTML]="'laOlma.sentence4' | translate"></p>
     </section>
     <section>
-        <h1> ¿QUÉ HACEMOS? </h1>
+        <h1> {{ "laOlma.title2" | translate }} </h1>
         <article>
             <app-image-card 
-                text="Estudio, conservación y divulgación del medio ambiente."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text1' | translate"
+                image="/assets/images/Desembocadura del esgueva.webp"
+                [alterText]="'imageCard.alterText1' | translate"
                 id="card1">
             </app-image-card>
             <app-image-card 
-                text="Protección de flora y fauna autóctona, paisaje y aguas superficiales."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text2' | translate"
+                image="/assets/images/Nido de pajaros.webp"
+                [alterText]="'imageCard.alterText2' | translate"
                 id="card2">
             </app-image-card>
             <app-image-card 
-                text="Educación ambiental y divulgación del patrimonio natural."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text3' | translate"
+                image="/assets/images/Charla de grupo.webp"
+                [alterText]="'imageCard.alterText3' | translate"
                 id="card3">
             </app-image-card>
             <app-image-card 
-                text="Protección del patrimonio natural, histórico y arqueológico."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text4' | translate"
+                image="/assets/images/Rio Pisuerga.webp"
+                [alterText]="'imageCard.alterText4' | translate"
                 id="card4">
             </app-image-card>
             <app-image-card 
-                text="Desarrollo de programas de voluntariado ambiental y conservación."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text5' | translate"
+                image="/assets/images/Bajo un pino.webp"
+                [alterText]="'imageCard.alterText5' | translate"
                 id="card5">
             </app-image-card>
             <app-image-card 
-                text="Colaboración con otras organizaciones para alcanzar objetivos comunes."
-                image="/assets/images/FOTO-EVENTO3.webp"
-                alterText="Imagen de grupo"
+                [text]="'imageCard.text6' | translate"
+                image="/assets/images/Charla tierra de campos.webp"
+                [alterText]="'imageCard.alterText6' | translate"
                 id="card6">
             </app-image-card>
         </article>

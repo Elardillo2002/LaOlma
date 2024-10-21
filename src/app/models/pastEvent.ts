@@ -9,7 +9,11 @@ export interface pastEvent {
     fecha: string;
     imagen: string;
 
-    date?: string;
+    date?: {
+        day: string;
+        monthName: string;
+        year: number;
+    }
     text?: string;
     seeMore?: boolean;
     imageUrl?: SafeUrl;

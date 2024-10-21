@@ -1,8 +1,10 @@
 export interface futureEvent {
     id?: number;
+    titulo: string;
+    lugar: string;
     fecha: string;
-    descripcion: string;
     tipo: string;
+    
     date?: {
         dayName: string;
         day: string;

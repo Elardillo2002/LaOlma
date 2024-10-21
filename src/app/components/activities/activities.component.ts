@@ -9,25 +9,28 @@ import { pastEvent } from 'app/models/pastEvent';
     styleUrls: ['./activities.component.scss']
 })
 export class ActivitiesComponent implements OnInit {
+    /** Variable for futureEvent interface */
     futureEvents: futureEvent[] = [];
+    /** Variable for pastEvent interface */
     pastEvents: pastEvent[] = [];
 
+    /** Component constructor
+     * @param {EventService} eventService Take eventService functions
+    */
     constructor (private eventService: EventService) {}
     
     ngOnInit(): void {
+        /** Take all futureEvents from database */
         this.eventService.getFutureEvents().subscribe((event: futureEvent[]) => {
             this.futureEvents = event;
         });
 
+        /** Take all pastEvents from database and create an URL for the image */
         this.eventService.getPastEvents().subscribe((events: pastEvent[]) => {
             this.pastEvents = events.map(event => ({
                 ...event,
-                imagen: this.createDataUrl(event.imagen)
+                imagen: this.eventService.createDataUrl(event.imagen)
             }));
         });
-    }
-
-    createDataUrl(base64String: string): string {
-        return `data:image/webp;base64,${base64String}`;
     }
 }

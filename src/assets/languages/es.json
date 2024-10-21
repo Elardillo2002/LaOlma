@@ -1,16 +1,173 @@
 {
-    "capital": {
-        "home": "INICIO",
-        "activities": "ACTIVIDADES",
-        "contact": "CONTACTO",
-        "collaborate": "COLABORA",
-        "RRSS": "REDES SOCIALES",
-        "aboutUs": "SOBRE NOSOTROS"
+    "activities": {
+        "title1": "ACTIVIDADES",
+        "title2": "FUTUROS EVENTOS",
+        "title3": "EVENTOS PASADOS",
+        "sentence1": "A continuación, se detallan las actuaciones realizadas por el grupo Medioambiental La Olma en el año 2024.",
+        "sentence2": "Nuestras actividades van encaminadas especialmente a la divulgación y la educación en el respeto y la conservación de los nos rodean. Para ello, contamos con la ayuda de nuestros socios, voluntarios y colaboradores que participan activamente en las actividades."
     },
 
-    "pageNavigation": {
-        "404": "¡Oh no, parece que te has perdido en el bosque!",
-        "dontExists": "La página que estás buscando no existe o ha sido eliminada",
-        "returnHome": "Volver a inicio"
+    "carousel": {
+        "title1": "Conoce nuestro trabajo",
+        "title2": "Nuestras localizaciones",
+        "title3": "Nuestro objetivo",
+        "text1": "Nos enfocamos en el estudio, conservación del medio ambiente, protegiendo la flora y fauna autóctona, el paisaje, las aguas superficiales y el resto de los recursos naturales, además de promover la educación ambiental y la divulgación del patrimonio natural, histórico y arqueológico a través de diversas metodologías y expresiones.",       
+        "text2": "El ámbito territorial en el que vamos a realizar principalmente nuestras actividades es la ciudad de Valladolid y provincia, pudiendo extenderse a toda Castilla y León.",
+        "text3": "Queremos ser un punto de encuentro para todas aquellas personas motivadas por la protección del medio ambiente, proponiendo acciones medioambientales que sensibilicen a la población sobre la importancia de preservar nuestro entorno natural y educando a jóvenes y adultos en el cuidado y respeto por el medio ambiente.",
+        "link1": "La Olma",
+        "link2": "Actividades",
+        "link3": "Únete",
+        "alterText": "Foto de grupo"
+    },
+
+    "collaborate": {
+        "title1": "Hazte socio",
+        "subtitle1": "Cuotas anuales",
+        "subtitle2": "Datos requeridos",
+        "sentence1": "Con tu cuota, nos ayudas a crecer y a financiar los gastos de nuestras actividades y el material necesario",
+        "fee1": "20€/año cuota general",
+        "fee2": "10€/año (jóvenes de 17 a 27 años)",
+        "fee3": "5€/año niños (hasta 16 años)",
+        "data1": "Nombre y apellidos",
+        "data2": "Número de teléfono",
+        "data3": "Correo electrónico"
+    },
+
+    "contact": {
+        "title1": "También puedes escribirnos",
+        "input1": "Nombre",
+        "input2": "Correo electrónico",
+        "input3": "Asunto",
+        "input4": "Mensaje",
+        "input5": "Borrar",
+        "input6": "Enviar"
+    },
+
+    "footer": {
+        "title1": "CONTACTO",
+        "title2": "REDES SOCIALES",
+        "title3": "SOBRE NOSOTROS"
+    },
+
+    "futureEvents": {
+        "week1": "Lunes",
+        "week2": "Martes",
+        "week3": "Miércoles",
+        "week4": "Jueves",
+        "week5": "Viernes",
+        "week6": "Sábado",
+        "week7": "Domingo",
+        "month1": "Enero",
+        "month2": "Febrero",
+        "month3": "Marzo",
+        "month4": "Abril",
+        "month5": "Mayo",
+        "month6": "Junio",
+        "month7": "Julio",
+        "month8": "Agosto",
+        "month9": "Septiembre",
+        "month10": "Octubre",
+        "month11": "Noviembre",
+        "month12": "Diciembre"
+    },
+
+    "honorary": {
+        "title1": "Nuestro socio de honor",
+        "alterText": "Fotografía del socio de honor de La Olma"
+    },
+
+    "laOlma": {
+        "title1": "¿QUIÉNES SOMOS?",
+        "title2": "¿QUÉ HACEMOS?",
+        "subtitle1": "¿A qué nos dedicamos?",
+        "subtitle2": "Horarios",
+        "subtitle3": "¿Qué buscamos?",
+        "sentence1": "Somos una <strong> Asociación Medioambiental </strong> sin ánimo de lucro, formada por un grupo diverso de voluntarios apasionados y comprometidos con la protección y preservación del medio ambiente. Nuestra comunidad de voluntarios dedica su tiempo y esfuerzo a promover la <strong> sostenibilidad, el respeto por la naturaleza y la conservación de los ecosistemas, </strong> trabajando juntos para hacer una diferencia positiva en nuestro entorno y en la vida de futuras generaciones.",
+        "sentence2": "Nuestra labor es el estudio, la conservación y divulgación del medio ambiente. Nos esforzamos por investigar y <strong> comprender </strong> los sistemas naturales que nos rodean, <strong> implementar estrategias </strong> efectivas para proteger y restaurar el medio ambiente, y <strong> educar </strong> a la comunidad sobre la importancia de preservar nuestro planeta. Centramos nuestra actividad tanto en Valladolid como en toda su provincia, y nuestra premisa fundamental es ser profundamente respetuosos con el entorno. Nos esforzamos por actuar de manera que no alteremos el equilibrio natural, dedicándonos exclusivamente a <strong> cuidarlo y respetarlo. </strong>",
+        "sentence3": "Nuestras actividades se llevan a cabo todos los <strong> sábados por la mañana</strong>, a excepción de los meses de verano, y están abiertas tanto para nuestros socios como para cualquier persona interesada en acompañarnos. No es necesario ser socio para participar; cualquier individuo que comparta nuestro compromiso con el medio ambiente y desee contribuir a nuestras acciones es bienvenido. Estas jornadas son una oportunidad para aprender, colaborar y disfrutar del entorno natural mientras trabajamos juntos para cuidarlo y protegerlo.",
+        "sentence4": "Estamos buscando voluntarios para unirse a nuestras actividades, las cuales se desarrollan en un <strong> ambiente sano y divertido </strong> donde tú también puedes formar parte. Invitamos a todas las personas interesadas a participar, todas las actividades son aptas para <strong> todas las edades </strong> y <strong> cualquier condición física. </strong> Únete a nosotros y contribuye a la protección del medio ambiente mientras disfrutas de una experiencia enriquecedora y gratificante en compañía de otros amantes de la naturaleza.",
+        "alterText1": "Imagen de plantación de árboles",
+        "alterText2": "Imagen de caminata"
+    },
+
+    "imageCard": {
+        "text1": "Estudio, conservación y divulgación del medio ambiente.",
+        "alterText1": "Imagen de desembocadura del esgueva",
+        "text2": "Protección de flora y fauna autóctona, paisaje y aguas superficiales.",
+        "alterText2": "Imagen de nido de pajaros",
+        "text3": "Educación ambiental y divulgación del patrimonio natural.",
+        "alterText3": "Imagen de charla de grupo",
+        "text4": "Protección del patrimonio natural, histórico y arqueológico.",
+        "alterText4": "Imagen del río Pisuerga",
+        "text5": "Desarrollo de programas de voluntariado ambiental y conservación.",
+        "alterText5": "Imagen debajo un pino",
+        "text6": "Colaboración con otras organizaciones para alcanzar objetivos comunes.",
+        "alterText6": "Imagen de charla tierra de campos"
+    },
+
+    "languages": "Idiomas",
+
+    "lastMeetings": {
+        "title": "Últimos eventos",
+        "alterText": "Imagen del evento",
+        "seeMore": "ver más...",
+        "moreActivities": "Ver más actividades"
+    },
+
+    "maps": {
+        "title": "¡Contáctanos!",
+        "link": "Envíanos un Whatsapp"
+    },
+
+    "navbar": {
+        "alterText": "Logotipo de la asociación",
+        "title1": "INICIO ",
+        "title2": "ACTIVIDADES ",
+        "title3": "COLABORA ",
+        "title4": "CONTACTO "
+    },
+    
+    "notFoundPage": {
+        "sentence1": "¡Oh no, parece que te has perdido en el bosque!",
+        "sentence2": "La página que estás buscando no existe o ha sido eliminada",
+        "link": "Volver a inicio"
+    },
+
+    "partnerCompanies": {
+        "title": "EMPRESAS COLABORADORAS",
+        "alterText1": "Logotipo de ekiwi",
+        "alterText2": "Logotipo de iberdrola",
+        "alterText3": "Logotipo de cruz roja",
+        "alterText4": "Logotipo de Lua imprenta digital",
+        "alterText5": "Logotipo de sabor a granel",
+        "alterText6": "Logotipo de el barco de la rubia",
+        "alterText7": "Logotipo de fundación personas"
+    },
+
+    "pastEvents": {
+        "type1": "Fecha",
+        "type2": "Participantes",
+        "type3": "Lugar"
+    },
+
+    "payMethods": {
+        "title": "Formas de pago",
+        "subtitle1": "Transferencia bancaria",
+        "subtitle2": "Pago por bizum",
+        "subtitle3": "Pago en mano",
+        "method1": "Cuenta",
+        "method21": "Concepto:",
+        "method22": "Nombre y apellidos",
+        "method3": "<strong>Bizum</strong> al ",
+        "alterText1": "Pago con tarjeta",
+        "alterText2": "Pago por bizum",
+        "toolTip": "¡Texto copiado!"
+    },
+
+    "stickyPhoto": "Conócenos",
+
+    "upcoming": {
+        "title": "Próximos eventos",
+        "link": "Contacto"
     }
 }
