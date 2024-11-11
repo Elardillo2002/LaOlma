@@ -6,6 +6,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -69,6 +71,7 @@ import { UpcomingComponent } from './components/upcoming/upcoming.component';
     MatIconModule,
     MatTooltipModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

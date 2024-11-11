@@ -46,7 +46,10 @@
     "footer": {
         "title1": "CONTACTO",
         "title2": "REDES SOCIALES",
-        "title3": "SOBRE NOSOTROS"
+        "title3": "PÁGINA WEB INFO",
+        "site1": "Diseño",
+        "site2": "Configuración de servidor",
+        "site3": "Traducciones"
     },
 
     "futureEvents": {
@@ -156,9 +159,9 @@
         "subtitle2": "Pago por bizum",
         "subtitle3": "Pago en mano",
         "method1": "Cuenta",
-        "method21": "Concepto:",
+        "method21": "Concepto",
         "method22": "Nombre y apellidos",
-        "method3": "<strong>Bizum</strong> al ",
+        "method3": "Bizum al ",
         "alterText1": "Pago con tarjeta",
         "alterText2": "Pago por bizum",
         "toolTip": "¡Texto copiado!"

@@ -1,0 +1,176 @@
+{
+    "activities": {
+        "title1": "ACTIVITÉS",
+        "title2": "FUTURS ÉVÉNEMENTS",
+        "title3": " ÉVÉNEMENTS PASSÉS",
+        "sentence1": " Voici les actions menées par le groupe environnemental La Olma en 2024.",
+        "sentence2": "Nos activités sont axées sur la vulgarisation et l’éducation dans le respect et la conservation des espaces qui nous entourent. Pour faire cela, nous comptons sur l’aide de nos partenaires, bénévoles et collaborateurs qui participent activement aux activités."
+    },
+
+    "carousel": { 
+        "title1": " Découvrez notre travail",
+        "title2": " Nos emplacements ",
+        "title3": "Notre objectif",
+        "text1": "Nous nous concentrons sur l’étude et la conservation de l’environnement, protégeant la flore et la faune indigènes, le paysage, les eaux de surface et les autres ressources naturelles, ainsi que sur la promotion de l’éducation environnementale et la divulgation du patrimoine naturel, historique et archéologique à travers diverses méthodologies et expressions.",       
+        "text2": "Le domaine territorial dans lequel nous allons principalement réaliser nos activités est la ville de Valladolid et sa province, pouvant s’étendre à toute la région de Castille-et-León.",
+        "text3": "Nous voulons être un point de rencontre pour toutes les personnes motivées par la protection de l’environnement, proposant des actions environnementales qui sensibilisent la population sur l’importance de préserver notre environnement naturel et éduquant les jeunes et les adultes dans le soin et le respect de l’environnement.",
+        "link1": "La Olma",
+        "link2": "Activités",
+        "link3": "Rejoignez-nous",
+        "alterText": "Photo de groupe"
+    },
+
+    "collaborate": {
+        "title1": "Devenir partenaire",
+        "subtitle1": "Quotas annuels",
+        "subtitle2": "Données nécessaires ",
+        "sentence1": " Avec votre contribution, vous nous aidez à grandir et à financer les dépenses de nos activités et le matériel nécessaire",
+        "fee1": "20€/an quota global",
+        "fee2": "10€/an (jeunes de 17 à 27 ans)",
+        "fee3": "5€/an enfants (jusqu’á 16 ans)",
+        "data1": "Nom et Prénom",
+        "data2": "Numéro de téléphone",
+        "data3": " Courriel"
+    },
+
+    "contact": {
+        "title1": "Vous pouvez aussi nous écrire",
+        "input1": "Nom, prénom",
+        "input2": "Courriel",
+        "input3": "Object",
+        "input4": "Message",
+        "input5": "Effacer",
+        "input6": "Envoyer"
+    },
+
+    "footer": {
+        "title1": "NOUS CONTACTER",
+        "title2": "RÉSEAUX SOCIAUX",
+        "title3": "SITE WEB INFO",
+        "site1": "Design by",
+        "site2": "Configuration du serveur",
+        "site3": "Traductions"
+    },
+
+    "futureEvents": {
+        "week1": "Lundi",
+        "week2": "Mardi",
+        "week3": "Mercredi",
+        "week4": "Jeudi",
+        "week5": "Vendredi",
+        "week6": "Samedi",
+        "week7": "Dimanche",
+        "month1": "Janvier",
+        "month2": "Février",
+        "month3": "Mars",
+        "month4": "April",
+        "month5": "Mai",
+        "month6": "Juin",
+        "month7": "Juillet",
+        "month8": "Août",
+        "month9": "Septembre",
+        "month10": "Octobre",
+        "month11": "Novembre",
+        "month12": "Décembre"
+    },
+
+    "honorary": {
+        "title1": " Notre partenaire d’honneur ",
+        "alterText": " Photo du partenaire d’honneur de La Olma"
+    },
+
+    "laOlma": {
+        "title1": "¿QUI SOMMES NOUS?",
+        "title2": "¿NOUS FAISONS QUOI?",
+        "subtitle1": "¿A quoi nous nous consacrons?",
+        "subtitle2": "Horaires",
+        "subtitle3": "¿Quel est notre but?", 
+        "sentence1": "Nous sommes une <strong> Association environnemental </strong> à but non lucratif, formée par un groupe diversifié de bénévoles passionnés et engagés dans la protection et la préservation de l’environnement. Notre communauté de bénévoles consacre son temps et ses efforts à promouvoir la <strong> durabilité, le respect pour la nature et la conservation des écosystèmes, </strong> travaillant ensemble pour arriver à faire une différence positive dans notre environnement et dans la vie des générations futures.",
+        "sentence2": "Notre travail est l’étude, la conservation et la diffusion de l’environnement. Nous faisons l'effort de faire des recherches et <strong> de comprendre </strong> les systèmes naturels qui nous entourent, <strong> de mettre en œuvre des stratégies </strong> efficaces pour protéger et restaurer l’environnement, et <strong> d’éduquer </strong> la communauté sur l’importance de préserver notre planète. Nous concentrons notre activité à la fois à Valladolid et dans toute sa province, et notre prémisse fondamentale est d’être profondément respectueux de l’environnement. Nous faisons l’effort de ne pas perturber l’équilibre naturel, en nous consacrant exclusivement à <strong>  le protéger et à le respecter. </strong>",
+        "sentence3": " Nos activités ont lieu tous les <strong> samedis matin </strong>, sauf les mois d’été, et elles sont ouvertes tant pour nos associés comme pour n’importe quelle personne intéressé à nous accompagner. Ce n’est pas nécessaire d’être associé pour nous accompagner; toute personne qui partage notre engagement envers l’environnement et souhaite contribuer à nos actions est la bienvenue. Ces journées sont une occasion d’apprendre, de collaborer et de profiter de l’environnement naturel, tout en travaillant ensemble pour le protéger.",
+        "sentence4": "Nous recherchons des volontaires qui voudraient participer à nos activités, qui se déroulent dans un <strong> environnement sain et amusant </strong> où vous pouvez également en faire partie. Nous invitons toutes les personnes intéressées à participer, toutes les activités sont adaptées pour <strong> tous les âges </strong> et <strong> toutes les conditions physiques. Rejoignez-nous et contribuez à la protection de l’environnement tout en profitant d’une expérience enrichissante et gratifiante en compagnie d’autres amoureux de la nature.",
+        "alterText1": "Image d’un plantation d’arbres ",
+        "alterText2": "Image d’une promenade"
+    },
+
+    "imageCard": {
+        "text1": " Étude, conservation et diffusion de l’environnement.",
+        "alterText1": " Image de l’embouchure de la rivière Esgueva",
+        "text2": " Protection de la faune et de la flore indigènes, du paysage et des eaux de surface.",
+        "alterText2": " Image de nid d’oiseau",
+        "text3": " Éducation à l’environnement et diffusion du patrimoine naturel.",
+        "alterText3": "Image d’un conférence en groupe",
+        "text4": "Protection du patrimoine naturel, historique et archéologique.",
+        "alterText4": "Image de la rivière Pisuerga",
+        "text5": " Développement de programmes de volontariat écologique et de conservation.",
+        "alterText5": "Image sous un pin",
+        "text6": "Collaboration avec d’autres organisations  afin d’atteindre des objectifs communs.",
+        "alterText6": "Image de la conférence tierra de campos"
+    },
+
+    "languages": "Langues",
+
+    "lastMeetings": {
+        "title": "Derniers événements",
+        "alterText": "Image de l’événement",
+        "seeMore": "voir plus...",
+        "moreActivities": "Voir plus activités"
+    },
+
+    "maps": {
+        "title": "Contactez-nous!",
+        "link": "Envoyez-nous un Whatsapp"
+    },
+
+    "navbar": {
+        "alterText": "Logo de l’association",
+        "title1": "ACCUEIL ",
+        "title2": "ACTIVITÉS ",
+        "title3": "COLABOREZ ",
+        "title4": "CONTACTE"
+    },
+    
+    "notFoundPage": {
+        "sentence1": "Oh non, il semble que vous vous êtes perdu(e) dans la forêt!",
+        "sentence2": "Le site que vous recherchez n’existe pas ou a été éliminé",
+        "link": "Retour au accueil"
+    },
+
+    "partnerCompanies": {
+        "title": "ENTREPRISES COLABORATRICES",
+        "alterText1": " Logo de ekiwi",
+        "alterText2": " Logo de iberdrola",
+        "alterText3": " Logo de cruz roja",
+        "alterText4": " Logo de Lua, imprimante digitale",
+        "alterText5": " Logo de sabor a granel",
+        "alterText6": " Logo de el barco de la rubia",
+        "alterText7": " Logo de la fondation personas"
+    },
+
+    "pastEvents": {
+        "type1": "Date",
+        "type2": "Participants",
+        "type3": "Lieu"
+    },
+
+    "payMethods": {
+        "title": "Methodes de paiement",
+        "subtitle1": " Virement bancaire ",
+        "subtitle2": " Paiement par bizum ",
+        "subtitle3": " Paiement en main ",
+        "method1": "Compte",
+        "method21": "Concept",
+        "method22": "Nom(s) et Prénom",
+        "method3": "Bizum à ",
+        "alterText1": "Paiement par carte",
+        "alterText2": "Paiement par bizum",
+        "toolTip": "¡Texte copié!"
+    },
+
+    "stickyPhoto": "connaisez-nous",
+
+    "upcoming": {
+        "title": "Prochains événements",
+        "link": "Contactez-nous"
+    }
+} 

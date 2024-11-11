@@ -4,24 +4,27 @@
     <section>
         <h2> {{ "contact.title1" | translate }} </h2>
         <!-- TODO: Añadir dirección de correo -->
-        <form>
+        <!-- TODO: Arreglar error de header al entrar en contacto -->
+        <form [formGroup]="form">
             <label for="name">
                 <mat-icon> person </mat-icon>
             </label>
-            <input type="text" name="name" id="name" [placeholder]="'contact.input1' | translate">
+            <input formControlName="from_name" type="text" name="name" id="name" [placeholder]="'contact.input1' | translate">
             <label for="email">
                 <mat-icon> email </mat-icon>
             </label>
-            <input type="email" name="email" id="email" [placeholder]="'contact.input2' | translate">
+            <input formControlName="from_email" type="email" name="email" id="email" [placeholder]="'contact.input2' | translate">
             <label for="subject">
                 <mat-icon> edit </mat-icon>
             </label>
-            <input type="text" name="subject" id="subject" [placeholder]="'contact.input3' | translate">
+            <input formControlName="from_subject" type="text" name="subject" id="subject" [placeholder]="'contact.input3' | translate">
             <label for="textarea"><mat-icon>chat_bubble</mat-icon></label>
-            <textarea name="message" maxlength="750" rows="6" id="textarea" [placeholder]="'contact.input4' | translate"></textarea>
+            <textarea formControlName="from_message" name="message" maxlength="750" rows="6" id="textarea" [placeholder]="'contact.input4' | translate"></textarea>
             <input type="reset" [value]="'contact.input5' | translate">
             <input type="submit" [value]="'contact.input6' | translate">
         </form>
+
+        {{form.value | json}}
     </section>
 </main>
 <app-footer></app-footer>

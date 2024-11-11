@@ -6,8 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  
+export class AppComponent { 
     constructor(private translate: TranslateService) {
         this.translate.addLangs(['en', 'es', 'fr']);
         const lang = this.translate.getBrowserLang();

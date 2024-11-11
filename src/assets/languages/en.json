@@ -1,13 +1,176 @@
-{    
-    "capital": {
-    "home": "HOME",
-    "activities": "ACTIVITIES",
-    "contact": "CONTACT",
-    "collaborate": "COLLABORATE"
-},
+{
+    "activities": {
+        "title1": "ACTIVITIES",
+        "title2": "FUTURE EVENTS",
+        "title3": "PAST EVENTS",
+        "sentence1": "The proceedings made by the environmental group 'La Olma' in 2024 will now be detailed.",
+        "sentence2": "Our activities are mainly focused in the disclosure and education about the respect and well maintenance of our surroundings. To ensure that, we count with the help of our associates, volunteers and contributors that actively participate in the activities."
+    },
 
-    "pageNavigation": {
-        "404": "404 Page not found",
-        "returnHome": "Return home"
+    "carousel": {
+        "title1": "Get to know our work",
+        "title2": "Our locations",
+        "title3": "Our goal",
+        "text1": "We are focused on the study and preservation of the environment, protecting the local flora and fauna, the landscape, surface water and other natural resources, as well as promoting environmental education and the dissemination of natural, historical and archaeological heritage through various methodologies and expressions.",
+        "text2": "The area in which we will carry out our activities is mainly the city of Valladolid and province with the same name, which may also extend to all of Castile-Leon",
+        "text3": "We want to be a meeting point for all of those people motivated by the protection of the environment, proposing environmental actions that raise awareness of the importance of preserving our natural environment and educating young people and adults in care and respect for the environment." ,
+        "link1": "La Olma",
+        "link2": "Activities",
+        "link3": "Join us",
+        "alterText": "Group picture"
+    },
+
+    "collaborate": {
+        "title1": "Become associate",
+        "subtitle1": "Annual contributions",
+        "subtitle2": "Required data",
+        "sentence1": "With your contribution, you help us grow and be able to fund the expenses and the materials we need to carry on with our activities",
+        "fee1": "20€/year general fee",
+        "fee2": "10€/year (youths from 17 to 27 years old)",
+        "fee3": "5€/year kids (up to 16 years old)",
+        "data1": "Name and Surname(s)",
+        "data2": "Telephone number",
+        "data3": "E-mail"
+    },
+
+    "contact": {
+        "title1": "You can also write to us",
+        "input1": "Name",
+        "input2": "e-mail",
+        "input3": "Subject",
+        "input4": "Message",
+        "input5": "Erase",
+        "input6": "Send"
+    },
+
+    "footer": {
+        "title1": "CONTACT",
+        "title2": "SOCIAL MEDIA",
+        "title3": "WEBSITE INFO",
+        "site1": "Design by",
+        "site2": "Server configuration",
+        "site3": "Traductions"
+    },
+
+    "futureEvents": {
+        "week1": "Monday",
+        "week2": "Tuesday",
+        "week3": "Wednesday",
+        "week4": "Thursday",
+        "week5": "Friday",
+        "week6": "Saturday",
+        "week7": "Sunday",
+        "month1": "January",
+        "month2": "February",
+        "month3": "March",
+        "month4": "April",
+        "month5": "May",
+        "month6": "June",
+        "month7": "July",
+        "month8": "August",
+        "month9": "September",
+        "month10": "October",
+        "month11": "November",
+        "month12": "December"
+    },
+
+    "honorary": {
+        "title1": "Our honorary associate",
+        "alterText": "Picture of the honorary associate of La Olma"
+    },
+
+    "laOlma": {
+        "title1": "¿WHO ARE WE?",
+        "title2": "¿WHAT DO WE DO?",
+        "subtitle1": "¿What are we focused on?",
+        "subtitle2": "Schedules",
+        "subtitle3": "¿What do we search?",
+        "sentence1": "We are a <strong> Environmental non-profit making Association </strong>, formed by a diverse group of passionate and committed volunteers for the protection and preservation of the environment. Our community of volunteers dedicates its time and efforts in promoting the <strong> sustainability, the respect for the environment and the preservation of ecosystems, </strong> working together to make a positive difference in our surroundings and in the lives of future generations.",
+        "sentence2": "Our work is the study, conservation and dissemination of the environment. We put our efforts in investigating and <strong> understanding </strong> the natural systems that surround us, <strong> in implementing effective strategies </strong> to protect and restore the environment, and <strong> educate </strong> our community about the importance of well preserving our planet. We focus our activity both in Valladolid and all throughout its province, and our fundamental premise is to be deeply respectful of the area and the environment. We strive to act in a way that does not disturb the natural balance, devoting ourselves exclusively to <strong> care for it and respect it. </strong>",
+        "sentence3": "Our activities take place every <strong> Saturday mornings </strong>, except for the summer months, and they are open to both our associates and everyone interested in joining us. It is not necessary to be an associate in order to participate; anyone who shares our commitment to the environment and wants to contribute to our actions is welcome. These meetings are an opportunity to learn, collaborate and enjoy the natural spaces while working together to care for it and protect it.",
+        "sentence4": "We are looking for volunteers that would like to join in our activities, that will be developed in a <strong> healthy and fun environment </strong> and in which you can take part in. We invite all interested people to participate. All activities are suitable for <strong> all ages </strong> and <strong> any physical condition. Join us and contribute to the protection of the environment while enjoying an enriching and rewarding experience in the company of other nature lovers.",
+        "alterText1": "Image of a tree plantation",
+        "alterText2": "Image of a promenade"
+    },
+
+    "imageCard": {
+        "text1": "Environmental research, conservation and dissemination..",
+        "alterText1": "Image of the mouth of the river Esgueva",
+        "text2": "Protection of native flora and fauna, landscape and surface waters.",
+        "alterText2": "Image of a bird's nest",
+        "text3": "Environmental education and natural heritage dissemination.",
+        "alterText3": "Image of a group speech",
+        "text4": "Protection of the historical, arqueological and natural patrimony.",
+        "alterText4": "Image of the river Pisuerga",
+        "text5": "Development of environmental conservation and voluntary programmes.",
+        "alterText5": "Image under a pine tree",
+        "text6": "Collaboration with other organizations to achieve common goals.",
+        "alterText6": "Image of the speech tierra de campos"
+    },
+
+    "languages": "Languages",
+
+    "lastMeetings": {
+        "title": "Last events",
+        "alterText": "Images of the event",
+        "seeMore": "see more...",
+        "moreActivities": "See more activites"
+    },
+
+    "maps": {
+        "title": "¡Contact us!",
+        "link": "Send us a Whatsapp"
+    },
+
+    "navbar": {
+        "alterText": "Logo of the association",
+        "title1": "HOME PAGE ",
+        "title2": "ACTIVITES ",
+        "title3": "COLABORATE WITH US ",
+        "title4": "CONTACT US"
+    },
+    
+    "notFoundPage": {
+        "sentence1": "¡Oh no, looks like you got lost in the forest!",
+        "sentence2": "The page you are looking for does not exist or has been eliminated",
+        "link": "Back to home page"
+    },
+
+    "partnerCompanies": {
+        "title": "ASSOCIATED COMPANIES",
+        "alterText1": "Logo of ekiwi",
+        "alterText2": "Logo of iberdrola",
+        "alterText3": "Logo of cruz roja",
+        "alterText4": "Logo of Lua imprenta digital",
+        "alterText5": "Logo of sabor a granel",
+        "alterText6": " Logo of el barco de la rubia",
+        "alterText7": "Logo of the Foundation personas"
+    },
+
+    "pastEvents": {
+        "type1": "Date",
+        "type2": "Participants",
+        "type3": "Place"
+    },
+
+    "payMethods": {
+        "title": "Pay methods",
+        "subtitle1": "Bank transference",
+        "subtitle2": "Payment by Bizum ",
+        "subtitle3": "Payment in person",
+        "method1": "Account",
+        "method21": "Concept",
+        "method22": "Name and Surname(s)",
+        "method3": "Send bizum to ",
+        "alterText1": "Payment by card",
+        "alterText2": "Payment by Bizum",
+        "toolTip": "Copied Text!"
+    },
+
+    "stickyPhoto": "Get to know us",
+
+    "upcoming": {
+        "title": "Next events",
+        "link": "Contact us"
     }
 }
